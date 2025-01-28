@@ -1,0 +1,251 @@
+/* Main container styles */
+.polynomial-visualizer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  margin: 20px 0;
+}
+
+.visualizer-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.visualizer-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.visualizer-content {
+  padding: 20px;
+}
+
+/* Section styles */
+.section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #2d2d2d;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: #f8f9fa;
+}
+
+.button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.button.active:hover {
+  background: #1d4ed8;
+}
+
+/* Input styles */
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 120px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* Visualization container */
+.visualization-container {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+/* Array view styles */
+.array-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: min-content;
+}
+
+.array-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cell-index {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.cell-content {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #3b82f6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-size: 16px;
+}
+
+.cell-power {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Linked list view styles */
+.linked-list-view {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: min-content;
+  padding: 8px 0;
+}
+
+.list-node {
+  width: 128px;
+  height: 64px;
+  border: 2px solid #22c55e;
+  border-radius: 6px;
+  background: white;
+  display: flex;
+}
+
+.node-value {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.node-power {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.arrow {
+  color: #9ca3af;
+}
+
+.null-node {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Graph container styles */
+.graph-container {
+  height: 400px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+/* Result display styles */
+.result {
+  background: #dbeafe;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+  color: #1e3a8a;
+}
+
+/* Coefficient input section */
+.coefficients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.coefficient-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coefficient-label {
+  font-size: 14px;
+  color: #4b5563;
+  min-width: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .visualizer-content {
+    padding: 16px;
+  }
+  
+  .list-node {
+    width: 100px;
+  }
+  
+  .cell-content {
+    width: 48px;
+    height: 48px;
+    font-size: 14px;
+  }
+  
+  .graph-container {
+    height: 300px;
+  }
+  
+  .coefficients-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
