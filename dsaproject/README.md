@@ -1,4 +1,4 @@
-# Polynomial Operations Visualizer
+# DSA Visualizer
 
 ## 📌 Project Overview
 This project is a **Polynomial Operations Visualizer**, developed as part of a college project. The application allows users to perform polynomial operations such as **addition and multiplication**, using both **array and linked list representations**. Additionally, users can **evaluate** the polynomial for a given value and visualize the results interactively.
