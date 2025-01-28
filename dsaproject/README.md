@@ -13,10 +13,9 @@ This project is a **Polynomial Operations Visualizer**, developed as part of a c
 - **Data Visualization:** The results of operations and evaluations are displayed using interactive visualizations.
 
 ## 🛠️ Technologies Used
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** (Mention if any, e.g., Python, Node.js)
+- **Frontend:** HTML, CSS, JavaScript(React JS)
 - **Data Structures:** Linked List, Array
-- **Visualization Library:** (Mention if any, e.g., Chart.js, D3.js)
+- **Visualization Library:** recharts form React
 
 ## 🎯 How to Use
 1. **Create a Polynomial**: Enter the highest power and corresponding coefficients.
